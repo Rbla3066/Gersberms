@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>
+    Erh Mah Gerd!
+  </title>
+</head>
+<div id="main">
+  <script type="text/javascript">
+      
+var input = prompt('What sentence would you like to convert to a gersbermism?');
+var i=0;
+    var result="";
+    while(i<input.length){
+      if(i<input.length-2&&input.substring(i,i+3)===("ing")){
+        result+="in";
+        i+=2;
+      }
+      else if(i<input.length-2&&input.substring(i,i+3)===("Hey")){
+        result+="Her";
+        i+=2;
+      }
+      else if(i<input.length-2&&input.substring(i,i+3)===("the")){
+        result+="da";
+        i+=2;
+      }
+      else if(i<input.length-1&&input.substring(i,i+2)===("er")){
+        result+="er";
+        i++;
+      }
+      else if(i<input.length-1&&i>1&&input.substring(i,i+2)===("e ")&&input.charAt(i-2)==' '){
+        result+="er";
+      }
+      else if(i<input.length-2&&input.substring(i,i+3)===("es ")){
+        result+="es";
+        i++;
+      }
+      else if(i>0&&input.charAt(i)=='e'&&input.charAt(i-1)=='c'){
+        result+="e";
+      }
+      else if(i<input.length-1&&input.charAt(i)=='e'&&input.charAt(i+1)==' '){
+        result+=" ";
+        i++;
+      }
+      else if(i<input.length-1&&input.charAt(i)=='y'&&input.charAt(i+1)==' '){
+        result+="ah";
+      }
+      else if(i<input.length-1&&input.substring(i,i+2)===("th")){
+        result+="d";
+        i++;
+      }
+      else if(input.charAt(i)=='a'||input.charAt(i)=='e'||input.charAt(i)=='i'||input.charAt(i)=='o'||input.charAt(i)=='u'){
+        if(i<input.length-1){
+          if(input.charAt(i+1)=='a'||input.charAt(i+1)=='e'||input.charAt(i+1)=='i'||input.charAt(i+1)=='o'||input.charAt(i+1)=='u'){
+            result+="er";
+            i++;
+          }
+          else{
+            result+="er";
+          }
+        }
+        else{
+          result+="er";
+        }
+      }
+      else{
+        result+=input.charAt(i);
+      }
+      i++;
+    }
+document.write(result);
+  </script>
+</div>
+</html>
