@@ -25,6 +25,10 @@ var i=0;
         result+="Her";
         i+=2;
       }
+      else if(i<input.length-2&&input.substring(i,i+3)===("one")){
+        result+="wern";
+        i+=2;
+      }
       else if(i<input.length-2&&input.substring(i,i+3)===("the")){
         result+="da";
         i+=2;
@@ -34,7 +38,7 @@ var i=0;
         i++;
       }
       else if(i==input.length-1&&input.charAt(i)=='e'){
-        result=result;
+        result+="er";
       }
       else if(i<input.length-1&&i>1&&input.substring(i,i+2)===("e ")&&input.charAt(i-2)==' '){
         result+="er";
