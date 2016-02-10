@@ -12,7 +12,10 @@
 <div id="wrapper">
 <div id="main">
   <script type="text/javascript">  
-    var input = prompt('Type in any regular english sentence. Watch it get reborn into gersbermism.');
+    var input = prompt('Type in any regular english sentence. Watch it get reborn into gersbermism!');
+    while(input.length > 45){
+      input = prompt('Please try a smaller sentence!')
+    }
     var i=0;
     var result="";
     while(i<input.length){
