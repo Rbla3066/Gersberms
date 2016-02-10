@@ -1,13 +1,42 @@
 #main {
 	background-image: url(../images/gerseberm.jpg);
-	height: 604px;
+	height: 600px;
 	width: 402px;
-	margin-left:250px;
-	margin-top: 50px;
+	margin-left:275px;
 	font-size:60px;
 	color: white;
 }
 #text {
 	padding-top:300px;
 	text-align:center;
+}
+#wrapper {
+	background-color:black;
+	height:800px;
+}
+#header {
+	height:75px;
+	background-color:black;
+}
+#info {
+	margin-top: 25px;
+	color: white;
+	margin-left: 305px;
+	font-size: 24px;
+}
+#footer {
+	height:70px;
+	clear:both;
+	background-color: #666666;
+	border-style:solid;
+	border-color: #4aaaad;
+	border-top-width:10px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+}
+#copyright {
+	text-align: center;
+	padding-top: 10px;
+	color:#dddddd;
 }
