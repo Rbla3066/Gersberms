@@ -11,10 +11,9 @@
 </div>
 <div id="wrapper">
 <div id="main">
-  <script type="text/javascript">
-      
-var input = prompt('Type in any regular english sentence. Watch it get reborn into gersbermism.');
-var i=0;
+  <script type="text/javascript">  
+    var input = prompt('Type in any regular english sentence. Watch it get reborn into gersbermism.');
+    var i=0;
     var result="";
     while(i<input.length){
       if(i<input.length-2&&input.substring(i,i+3)===("ing")){
@@ -85,10 +84,13 @@ var i=0;
     }
     result+="</p></div>";
     result="<div><p id=\"text\">" + result;
-document.write(result);
+    document.write(result);
   </script>
 </div>
-<p id="info">To try again, refresh your browser!</p>
+<p id="info">To try again, click below!</p>
+<br>
+<br>
+<a href="https://sheltered-stream-72583.herokuapp.com" alt="Try again"><p id="restart">Stert</p></a>
 </div>
 <div id="footer">
       <h6 id="copyright">@ Copyright 2016 Robert Black<h6>
