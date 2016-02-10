@@ -4,5 +4,8 @@
 	width: 402px;
 	font-size:60px;
 	color: white;
-	
+}
+#text {
+	padding-top:300px;
+	text-align:center;
 }
