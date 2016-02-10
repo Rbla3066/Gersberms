@@ -42,7 +42,7 @@
       else if(i==input.length-1&&input.charAt(i)=='e'){
         result+="er";
       }
-      else if(i<input.length-2&&input.substring(i,i+3)===("es ")){
+      else if(i<input.length-2&&(input.substring(i,i+3)===("es ")||input.substring(i,i+3)===("es,"))){
         result+="es";
         i++;
       }
@@ -51,6 +51,10 @@
       }
       else if(i>0&&input.charAt(i)=='e'&&input.charAt(i-1)=='c'){
         result+="e";
+      }
+      else if(i<input.length-1&&input.substring(i,i+2)===("e,")){
+        result+=",";
+        i++;
       }
       else if(i<input.length-1&&input.substring(i,i+2)===("e ")){
         result+=" ";
