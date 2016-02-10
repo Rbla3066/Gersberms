@@ -40,12 +40,12 @@ var i=0;
       else if(i==input.length-1&&input.charAt(i)=='e'){
         result+="er";
       }
-      else if(i<input.length-1&&i>1&&input.substring(i,i+2)===("e ")&&input.charAt(i-2)==' '){
-        result+="er";
-      }
       else if(i<input.length-2&&input.substring(i,i+3)===("es ")){
         result+="es";
         i++;
+      }
+      else if(i<input.length-1&&i>1&&input.substring(i,i+2)===("e ")&&input.charAt(i-2)==' '){
+        result+="er";
       }
       else if(i>0&&input.charAt(i)=='e'&&input.charAt(i-1)=='c'){
         result+="e";
